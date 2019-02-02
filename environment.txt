@@ -1,0 +1,10 @@
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+JAVA_HOME="/usr/lib/jvm/zulu-8-amd64"
+JRE_HOME="/usr/lib/jvm/zulu-8-amd64/jre"
+
+
+----------------------------------------------------------------------------------------------
+
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+JAVA_HOME="/opt/Zulu/zulu-8"
+JRE_HOME="/opt/Zulu/zulu-8/jre"
