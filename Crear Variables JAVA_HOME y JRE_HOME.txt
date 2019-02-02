@@ -1,0 +1,85 @@
+################################################
+### Para Azul Zulu Descargado Usando APT-GET ###
+################################################
+
+    
+        #################
+        ### JAVA_HOME ###
+        #################
+
+Agregar la Variable a:
+
+    xed admin:///etc/environment
+
+    pluma admin:///etc/environment
+
+Agregar: 
+
+    JAVA_HOME="/usr/lib/jvm/zulu-8-amd64"
+
+Para Verificar que la variable del entorno JAVA_HOME este correcta, ejecutar en terminal:
+
+    echo $JAVA_HOME
+
+
+        ################
+        ### JRE_HOME ###
+        ################
+
+Agregar la Variable a:
+
+    xed admin:///etc/environment
+
+    pluma admin:///etc/environment
+
+Agregar: 
+
+    JRE_HOME="/usr/lib/jvm/zulu-8-amd64/jre"
+
+Para Verificar que la variable del entorno JRE_HOME este correcta, ejecutar en terminal:
+
+    echo $JRE_HOME
+
+
+###################################################
+### Para Azul Zulu Descargado Sitio Web .tar.gz ###
+###################################################
+
+    
+        #################
+        ### JAVA_HOME ###
+        #################
+
+Agregar la Variable a:
+
+    xed admin:///etc/environment
+
+    pluma admin:///etc/environment
+
+Agregar: 
+
+    JAVA_HOME="/opt/Zulu/zulu-8"
+
+Para Verificar que la variable del entorno JAVA_HOME este correcta, ejecutar en terminal:
+
+    echo $JAVA_HOME
+
+
+        ################
+        ### JRE_HOME ###
+        ################
+
+Agregar la Variable a:
+
+    xed admin:///etc/environment
+
+    pluma admin:///etc/environment
+
+Agregar: 
+
+    JRE_HOME="/opt/Zulu/zulu-8/jre"
+
+Para Verificar que la variable del entorno JRE_HOME este correcta, ejecutar en terminal:
+
+    echo $JRE_HOME
+
