@@ -5,6 +5,10 @@
 
 1. pluma admin:///etc/default/grub
 
+	o en terminal:
+	
+sudo nano /etc/default/grub
+
 	GRUB_TIMEOUT=15
 
 2. sudo update-grub
