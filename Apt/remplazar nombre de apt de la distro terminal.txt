@@ -1,0 +1,7 @@
+sudo sed -i "s/stretch/buster/g" /etc/apt/sources.list
+
+
+
+stretch es el nombre antiguo
+
+buster es el nombre al que queremos cambiar el nuevo nombre

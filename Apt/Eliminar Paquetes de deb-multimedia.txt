@@ -1,0 +1,47 @@
+###############################################
+### Eliminar Paquetes de deb-multimedia.org ###
+###############################################
+
+1. Editar sources.list , eliminando el repo de deb-multimedia (dmo)
+
+        ##################
+        ### Linux Mint ###
+        ##################
+
+    xed admin:///etc/apt/sources.list.d/official-package-repositories.list
+
+        ##############
+        ### Debian ###
+        ##############
+
+    gedit admin:///etc/apt/sources.list
+
+
+2. Hacer un update
+
+    sudo apt update
+
+
+3. Ver que paquetes estan instalados de dmo
+
+    dpkg -l | grep dmo
+
+4. Seleccionar los paquetes de dmo con este comando
+
+    rmfiles=$(dpkg -l | grep dmo | awk '{print $2}')
+
+5. Eliminar los paquetes de dmo
+
+    sudo dpkg -P --force-depends $rmfiles
+
+6. Hacer un update
+
+    sudo apt update
+
+7. Reparar los paquetes
+
+    sudo apt install -f
+
+8. Usar nuestra lista de instalacion de apt-get Cinnamon, apt-get Mate, etc
+
+9. sudo apt autoremove

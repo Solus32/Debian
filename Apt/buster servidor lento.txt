@@ -1,0 +1,23 @@
+#######################################
+### Debian Repositorios Principales ###
+#######################################
+deb http://ftp.us.debian.org/debian/ buster main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ buster main contrib non-free
+
+###########################################
+### Debian Actualizaciones de Seguridad ###
+###########################################
+deb http://security.debian.org/ buster/updates main contrib non-free
+deb-src http://security.debian.org/ buster/updates main contrib non-free
+
+###########################################
+### Debian Actualizaciones Recomendadas ###
+###########################################
+deb http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ buster-updates main contrib non-free
+
+#########################################
+### Debian Actualizaciones Propuestas ###
+#########################################
+#deb http://ftp.us.debian.org/debian buster-proposed-updates main contrib non-free
+#deb-src http://ftp.us.debian.org/debian buster-proposed-updates main contrib non-free
