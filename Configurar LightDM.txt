@@ -1,5 +1,6 @@
-Configurar LightDM para que ponga el usuario y solo pongamos nosotros el password
----------------------------------------------------------------------------------
+#########################################################################################
+### Configurar LightDM para que ponga el usuario y solo pongamos nosotros el password ###
+#########################################################################################
 
 
  gedit admin:///usr/share/lightdm/lightdm.conf.d/01_debian.conf 
