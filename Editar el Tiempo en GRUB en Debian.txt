@@ -1,0 +1,10 @@
+##########################################
+### Editar el Tiempo en GRUB en Debian ###
+##########################################
+
+
+1. pluma admin:///etc/default/grub
+
+	GRUB_TIMEOUT=15
+
+2. sudo update-grub
