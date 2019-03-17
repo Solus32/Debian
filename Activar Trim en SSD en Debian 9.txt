@@ -1,0 +1,53 @@
+#######################################
+### Activar Trim en SSD en Debian 9 ###
+#######################################
+
+
+1. sudo apt-get install util-linux
+
+
+    Ahora vamos a copiar los dos servicios fstrim de antes a su sitio en systemd.
+
+
+2. sudo cp /usr/share/doc/util-linux/examples/fstrim.service /etc/systemd/system
+2. sudo cp /usr/share/doc/util-linux/examples/fstrim.timer /etc/systemd/system
+
+--------------------------------------------------------
+Podemos comprobarlo entrando al timer.
+
+    cat /etc/systemd/system/fstrim.timer
+
+[Unit]
+Description=Discard unused blocks once a week
+Documentation=man:fstrim
+ 
+[Timer]
+OnCalendar=weekly
+AccuracySec=1h
+Persistent=true
+ 
+[Install]
+WantedBy=timers.target
+
+---------------------------------------------------------
+Para asegurarnos también podemos comprobar si timer está activo. 
+
+Escribir en el Teclado
+
+    sudo systemctl status fstrim.timer
+
+[sudo] password for yoyo: 
+● fstrim.timer - Discard unused blocks once a week
+   Loaded: loaded (/etc/systemd/system/fstrim.timer; enabled; vendor preset: enabled)
+   Active: active (waiting) since Wed 2017-01-11 19:55:52 CET; 47min ago
+     Docs: man:fstrim
+ 
+ene 11 19:55:52 debian systemd[1]: Started Discard unused blocks once a week.
+
+----------------------------------------------------------
+
+En caso de que no este activo el servicio de Trim
+
+sudo systemctl enable fstrim.service
+
+sudo systemctl enable fstrim.timer

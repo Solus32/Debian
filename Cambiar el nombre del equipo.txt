@@ -1,0 +1,25 @@
+Cambiar el nombre del equipo
+----------------------------
+
+Cambiar el nombre del equipo de esto :
+
+	pepe@debian
+
+A esto: 
+
+	pepe@pepe-AOD255E
+
+
+1. sudo nano /etc/hostname
+
+	donde dice debian por el nombre que queramos eg.
+
+	pepe-AOD255E
+
+2. sudo nano /etc/hosts
+
+	donde dice debian por el nombre que queramos eg.
+
+	pepe-AOD255E
+
+3. Reiniciar el equipo

@@ -1,0 +1,21 @@
+#######################################################
+### How to Enable Automatic Login on Debian LightDM ###
+#######################################################
+
+
+1. gedit admin:///etc/lightdm/lightdm.conf
+
+2. Buscar
+
+[Seat:*]
+#autologin-user=
+#autologin-user-timeout=0
+
+	Quitar # y cambiarlo a:
+
+autologin-user=pepe
+autologin-user-timeout=0
+
+3. Terminal y escribir esto:
+
+sudo dpkg-reconfigure lightdm

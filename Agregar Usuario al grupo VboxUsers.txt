@@ -1,0 +1,11 @@
+##############################################
+### Para que funcione el USB en VirtualBox ###
+##############################################
+
+Terminal
+
+	sudo adduser $USER vboxusers
+
+verificar
+
+	groups

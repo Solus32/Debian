@@ -1,0 +1,52 @@
+###############################
+### Agregar Permiso de Sudo ###
+###############################
+
+
+1. Para ver en que grupo se encuentra el Usuario pepe escribir en Terminal:
+
+	groups
+
+y aparece algo como esto eg.
+
+pepe adm cdrom floppy audio dip video plugdev systemd-journal systemd-timesync systemd-network netdev bluetooth lpadmin scanner
+
+Y no dice nada de sudo , quiere decir que el usuario pepe no esta dentro del grupo sudo
+
+	
+2. su -			--> Iniciamos Sesion Root
+
+3. apt install sudo
+
+4. adduser pepe sudo	--> Agregar el usuario pepe al grupo sudo
+
+5. adduser pepe adm
+
+6. exit
+
+7. reiniciar
+
+8. sudo test
+
+
+-------------------------------------------------------
+##############
+### Grupos ###
+##############
+
+adm 
+cdrom 
+floppy 
+sudo 
+audio 
+dip 
+video 
+plugdev 
+systemd-journal 
+systemd-timesync 
+systemd-network 
+netdev 
+bluetooth 
+lpadmin 
+scanner 
+vboxusers
