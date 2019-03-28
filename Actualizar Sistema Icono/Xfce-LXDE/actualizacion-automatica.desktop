@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name[es]=Actualizar Sistema
+Name[es_MX]=Actualizar Sistema
+Comment[es]=Actualizar el sistema
+Comment[es_MX]=Actualizar el sistema
+Exec=/usr/local/bin/actualizacion-automatica
+Icon=/home/pepe/Imágenes/ubuntu_update_manager_icon_v2.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;
+
