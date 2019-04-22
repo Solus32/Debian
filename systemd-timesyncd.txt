@@ -1,0 +1,30 @@
+#########################
+### systemd-timesyncd ###
+#########################
+
+Editar y Agregar:
+
+gedit admin:///etc/systemd/timesyncd.conf
+
+sudo nano /etc/systemd/timesyncd.conf
+
+[Time]
+NTP=0.us.pool.ntp.org 1.us.pool.ntp.org 2.us.pool.ntp.org 3.us.pool.ntp.org
+FallbackNTP=0.de.pool.ntp.org 1.de.pool.ntp.org 2.de.pool.ntp.org 3.de.pool.ntp.org
+
+-----------------------------------------------------------------------------------
+sudo apt purge ntp
+
+timedatectl
+
+sudo timedatectl set-ntp true
+
+    NOTA: Si no se activo teclear lo siguiente:
+
+sudo systemctl enable systemd-timesyncd
+
+sudo systemctl start systemd-timesyncd
+
+sudo systemctl status systemd-timesyncd
+
+timedatectl status
