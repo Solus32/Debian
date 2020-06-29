@@ -1,0 +1,9 @@
+about:config  
+
+browser.zoom.siteSpecific  --> and set its value to --> false
+
+zoom.minPercent  --> change value 30 to ---> 110
+
+
+Then close and restart  Firefox.
+

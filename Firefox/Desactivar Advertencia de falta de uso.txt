@@ -1,0 +1,25 @@
+about:config
+
+	Escribir en el area de busqueda
+
+browser.disableResetPrompt
+
+	y Seleccionar Booleano
+
+y dar en el icono de +
+
+Seleccionar:
+
+    true
+
+###################
+### Tor Browser ###
+###################
+
+    Crear un nuevo --> si/no y poner esto:
+
+browser.disableResetPrompt
+
+Buscar --> browser.disableResetPrompt
+
+y Activar a --> true

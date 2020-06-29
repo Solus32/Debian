@@ -1,0 +1,36 @@
+Corregir Sync se desconecta cada vez que iniciamos firefox
+----------------------------------------------------------
+
+
+1. Menu -> Preferencias
+
+2. Privacidad
+
+		Seleccionar lo siguiente:
+
+	Firefox debe: Usar configuraciones personalizadas para el historial
+
+Desmarcar :
+---------
+
+	Siempre usar modo de navegación privada
+
+	Recordar mi historial de navegación y descargas
+	
+	Recordar el historial de búsquedas y formularios
+
+
+Marcar con palomita:
+-------------------
+
+	Recordar Aceptar cookies
+
+	Aceptar cookies de terceros : Siempre
+
+	Mantener hasta que : Caduquen
+
+	Borrar el historial al cerrar Firefox
+
+              y En Borrar el historial al cerrar Firefox --> Click en Configuración --> Quitar la palomita de Contraseñas Guardadas, todo lo demas debe estar marcado
+
+

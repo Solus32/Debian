@@ -1,0 +1,14 @@
+Aumentar el DPI en Firefox para WUXGA (1920x1200)
+-------------------------------------------------
+
+1. poner en la barra de direcciones:
+
+	about:config
+
+2. buscar 
+
+    layout.css.devPixelsPerPx
+
+Y en valor cambiar -1.0 y poner 1.1 o 1.25 ; 1.3 ; 1920x1080= 1.5 ; 1.8 o 2.0 dependiendo de que tan grande lo queramos
+
+ esto aumenta el tamaño de la letra

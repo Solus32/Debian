@@ -1,0 +1,27 @@
+Como asociar los Magnet-Link con Firefox en Debian 7
+----------------------------------------------------
+
+1. about:config
+
+2. Nos vamos hasta el final y en un espacio en blanco le damos boton derecho del mouse y elegimos
+
+	Nuevo -> Lógico
+
+3. Ponemos el nombre de preferencia:
+
+	network.protocol-handler.expose.magnet
+
+4. Le ponemos como valor cadena
+
+	false
+
+5. Buscamos una página con magnet-link eg The Pirate Bay y asociarlo con Transmission que se encuentra en:
+
+	/usr/bin/transmission-gtk
+
+--------------------------------------------------------------------------------------------
+NOTA: En caso de que nos hayamos equivocado editar el archivo prefs.js que se encuentra en:
+
+    /home/pepe/.mozilla/firefox/wct355yf.default/prefs.js
+
+y eliminar --> network.protocol-handler.expose.magnet
