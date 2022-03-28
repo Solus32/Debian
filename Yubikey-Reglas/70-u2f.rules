@@ -34,7 +34,7 @@ KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="058b", ATTRS{idProduct
 # Kensington VeriMark by Synaptics Inc.
 KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="06cb", ATTRS{idProduct}=="0088", TAG+="uaccess", GROUP="plugdev", MODE="0660"
 
-# FS ePass FIDO by Feitian Technologies Co., Ltd.
+# ePass FIDO by Feitian Technologies Co., Ltd.
 KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="096e", ATTRS{idProduct}=="0850", TAG+="uaccess", GROUP="plugdev", MODE="0660"
 
 # Unknown product by Feitian Technologies Co., Ltd.
