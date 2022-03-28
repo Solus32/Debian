@@ -1,0 +1,126 @@
+####################################################
+### Usar Yubico o Feitian para el Login en Linux ###
+####################################################
+
+1. Instalar los archivos necesarios
+
+	sudo apt install libpam-u2f pamu2fcfg
+	
+2. Crear la Carpeta
+
+	mkdir -p ~/.config/Yubico
+
+3. Asociar la llave U2F a nuestra cuenta
+
+NOTA: Insertar antes nuestra llave, Cuando nuestra llave comienze a parpadear tocar el metal para confirmar
+
+	pamu2fcfg > ~/.config/Yubico/u2f_keys
+
+4. Agregar una llave adicional o varias llaves
+
+	pamu2fcfg -n >> ~/.config/Yubico/u2f_keys
+	
+5. Configurar Sudo para que use las llaves
+
+IMPORTANTE se puede usar para que sea SIN-CONTRASEÑA o CONTRASEÑA+2FA
+
+##############################
+### SIN CONTRASEÑA EN SUDO ###
+##############################
+
+	sudo nano /etc/pam.d/sudo
+	
+Agregar la linea siguiente ARRIBA o ANTES de “@include common-auth”
+
+	auth sufficient pam_u2f.so
+	
+IMPORTANTE: Para Usar sudo en Terminal debemos Colocar Primero la llave y luego sudo echo test y comienza a parpadear y tocamos, automaticamente le da enter y listo
+
+	
+##################################
+### CON CONTRASEÑA+2FA EN SUDO ###
+##################################
+
+	sudo nano /etc/pam.d/sudo
+
+Nos solicta la Contraseña y despues la llave de Seguridad comienza a Parpadear
+
+Agregar la linea siguiente ABAJO de “@include common-auth”
+
+	auth required pam_u2f.so
+	
+5. Retirar la llave y hacer una prueba usando sudo echo test en Terminal
+	
+		##############################	
+		### Login en GDM o LIGHTDM ###
+		##############################	
+
+1. Para USAR la LLave en GDM o LIGHTDM
+
+	sudo nano /etc/pam.d/gdm-password   ---> GDM
+	
+	sudo nano /etc/pam.d/lightdm  ---> LIGHTDM
+	
+######################
+### SIN CONTRASEÑA ###
+######################
+
+	sudo nano /etc/pam.d/gdm-password
+	
+Agregar la linea siguiente ARRIBA o ANTES de “@include common-auth”
+
+	auth sufficient pam_u2f.so
+	
+Cuando iniciemos en GDM o LIGHTDM, debemos poner primero la Llave y luego presionar el logotipo del usuario usando ENTER o con el Mouse y luego la llave comenzara a parpadear y tocamos la llave y automaticamente inicia sesion, 
+
+NOTA: cuando iniciamos Spotify nos puede decir que las llaves del gestor de contraseñas no se desbloqueo y debemos teclear nuestra contraseña de usuario para desbloquear el gestor de llaves
+	
+	
+##########################
+### CON CONTRASEÑA+2FA ###
+##########################
+
+	sudo nano /etc/pam.d/gdm-password
+
+Nos solicta la Contraseña y despues la llave de Seguridad comienza a Parpadear
+
+Agregar la linea siguiente ABAJO de “@include common-auth”
+
+	auth required pam_u2f.so
+
+		#################################	
+		### Para Usar la Llave en TTY ###
+		#################################
+
+Para Usar la llave de Seguridad en TTY (Alt+F1 ; Alt+F2 ,etc)
+
+
+#####################	
+## SIN CONTRASEÑA ###
+#####################
+
+	sudo nano /etc/pam.d/login
+
+Agregar la linea siguiente ARRIBA o ANTES de “@include common-auth”
+
+	auth sufficient pam_u2f.so
+
+
+##########################
+### CON CONTRASEÑA+2FA ###
+##########################
+
+	sudo nano /etc/pam.d/login
+	
+Agregar la linea siguiente ABAJO de “@include common-auth”
+
+	auth required pam_u2f.so
+
+Nos solicta la Contraseña y despues la llave de Seguridad comienza a Parpadear
+
+--------------------------------------------------------------------------------------
+Fuente
+
+https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F
+
+https://wiki.debian.org/Security/U2F
