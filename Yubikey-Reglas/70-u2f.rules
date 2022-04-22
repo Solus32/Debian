@@ -94,7 +94,7 @@ KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1050", ATTRS{idProduct
 # YubiKey NEO OTP+FIDO+CCID by Yubico AB
 KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0116", TAG+="uaccess", GROUP="plugdev", MODE="0660"
 
-# Security Key by Yubico by Yubico AB
+# Yubikey Touch U2F Security Key by Yubico AB
 KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0120", TAG+="uaccess", GROUP="plugdev", MODE="0660"
 
 # Unknown product by Yubico AB
