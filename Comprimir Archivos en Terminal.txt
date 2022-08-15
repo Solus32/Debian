@@ -1,0 +1,61 @@
+Comprimir Archivos en Terminal
+------------------------------
+
+###########
+### ZIP ###
+###########
+
+zip (Nombre del archivo .zip a crear) (Archivo para agregar al Comprimido .zip)
+
+eg.
+	zip prueba.zip clipart.txt
+
+	zip Embedded_Theme.zip Official*
+
+
+NOTA: Recuerda si queremos poner que el archivo .zip tenga más de 1 nombre poner siempre _ ,porque si no nos va a dar error para crear el archivo
+
+###########
+### RAR ###
+###########
+
+rar a (Nombre del archivo .rar a crear) (Archivo para agregar al Comprimido .rar)
+
+El comando "a" sirve también para agregar más archivos a un archivo .rar creado anteriormente.
+
+eg.
+
+	rar a prueba.rar clipart.txt
+
+##############
+### TAR.GZ ###
+##############
+
+	tar -cvzf tarballname.tar.gz itemtocompress.extension
+
+For example, to compress a directories jpg files only, you’d type:
+
+	tar -cvzf jpegarchive.tar.gz /path/to/images/*.jpg
+
+
+###############
+### TAR.BZ2 ###
+###############
+
+	tar -cvjf tarballname.tar.bz2 itemtocompress.extension
+
+###########	
+### 7z	###
+###########
+
+
+	7zz a ~/Descargas/'TagMo 2.7.4.7z' ~/Descargas/'TagMo 2.7.4.apk'
+	
+Para Comprimir un Archivo con Password y Ocultando el Contenido
+
+	7zz a -p -mhe=on spotify.7z 'spotify drj.txt'
+	
+Comprimir una Carpeta con todo y sus archivos
+
+	7zz a microsoft-fonts.7z microsoft-fonts
+

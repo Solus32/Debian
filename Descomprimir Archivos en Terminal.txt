@@ -1,0 +1,51 @@
+Descomprimir Archivos en Terminal
+------------------------------
+
+###########
+### ZIP ###
+###########
+
+   	unzip prueba.zip
+
+Nota: Para Descomprimir multiplies archivos zip con diferentes nombres , y evitar este error caution: filename not matched
+
+    	unzip '*.zip'
+    
+###########
+### RAR ###
+###########
+
+	unrar x prueba.rar
+	
+	
+##############
+### TAR.GZ ###
+##############
+
+	tar -xvzf prueba.tar.gz
+	
+###############
+### TAR.BZ2 ###
+###############
+
+	tar -xvjf prueba.tar.bz2
+	
+##############
+### TAR.XZ ###
+##############
+
+	tar -xf prueba.tar.xz
+	
+###########	
+### 7z	###
+###########
+
+	7zz x prueba.7z
+	
+##########
+### XZ ###
+##########
+
+	xz -d -v prueba.xz
+
+
