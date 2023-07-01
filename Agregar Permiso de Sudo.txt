@@ -18,15 +18,13 @@ Y no dice nada de sudo , quiere decir que el usuario pepe no esta dentro del gru
 
 3. apt install sudo
 
-4. adduser pepe sudo	--> Agregar el usuario pepe al grupo sudo
+4. adduser nombre-usuario sudo	--> Agregar el usuario nombre-usuario al grupo sudo
 
-5. adduser pepe adm
+5. exit
 
-6. exit
+6. reiniciar
 
-7. reiniciar
-
-8. sudo test
+7. sudo test
 
 
 -------------------------------------------------------
