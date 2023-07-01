@@ -1,0 +1,120 @@
+sudo apt install system-config-printer gnome-screenshot synaptic gdebi dmz-cursor-theme ufw xfburn vlc build-essential rsync fonts-dejavu fonts-dejavu-extra fonts-dejavu-core fonts-droid-fallback fonts-noto-mono fonts-noto fonts-noto-cjk fonts-noto-hinted fonts-noto-unhinted fonts-freefont-ttf debian-keyring unzip zip printer-driver-splix hplip hplip-data hplip-doc ttf-bitstream-vera gimp gimp-data-extras gimp-help-es gimp-plugin-registry nano simple-scan dconf-editor dkms ffmpegthumbnailer faenza-icon-theme gnome-brave-icon-theme gnome-dust-icon-theme gnome-human-icon-theme gnome-noble-icon-theme gnome-wine-icon-theme gnome-wise-icon-theme numix-icon-theme tango-icon-theme faba-icon-theme gnome-icon-theme-yasis gnome-illustrious-icon-theme arj lhasa lzip audacious audacious-plugins audacious-plugins-data easytag extract ffmpeg gstreamer1.0-plugins-bad gstreamer1.0-vaapi gstreamer1.0-libav x264 x265 lame libaacs0 libbdplus0 libbluray-doc libgstreamer-plugins-bad1.0-0 mjpegtools soundconverter apparmor apparmor-profiles gparted xfsprogs reiserfsprogs reiser4progs jfsutils gpart udftools dvd+rw-tools cmake git tzdata autogen locate curl hfsplus dmg2img regionset libimobiledevice-utils libplist-utils hfsutils libstdc++5 cdw btrfs-progs f2fs-tools lsdvd libdvdnav4 mtools manpages-es thermald hardinfo gnome-logs moka-icon-theme unattended-upgrades lzma lrzip mlocate flac normalize-audio ogmtools vorbis-tools bluetooth inxi flatpak openssh-client udisks2 xsel gnome-mahjongg qt5ct qt5-style-plugins smplayer smplayer-l10n smplayer-themes bolt gnome-colors htop gnome-games apt-transport-https sed gawk gzip gnupg xz-utils gstreamer1.0-alsa gstreamer1.0-qt5 cheese sassc python3-pip libu2f-host0 python3-fido2 u2f-host exfatprogs net-tools gtkhash scdaemon meson libu2f-udev libfido2-1 libfido2-doc libpam-u2f webp gaupol sound-juicer gtkpod fonts-gnutypewriter python-is-python3 libsdl2-image-2.0-0 heif-gdk-pixbuf libavif-gdk-pixbuf libg3d-plugin-gdkpixbuf libg3d0 smartmontools libpam-u2f pamu2fcfg faad printer-driver-all clamtk papirus-icon-theme bibata-cursor-theme human-icon-theme
+
+sudo apt purge apt-listchanges
+
+sudo apt install nautilus-dropbox
+
+sudo apt purge zutty
+
+sudo apt purge debian-reference-common debian-reference-es
+
+sudo apt install gedit gedit-plugins
+
+##################
+### Emuladores ###
+##################
+
+sudo apt install retroarch libretro-snes9x libretro-nestopia libretro-mgba libretro-genesisplusgx libretro-gambatte libretro-desmume libretro-beetle-pce-fast libretro-beetle-psx libretro-beetle-vb libretro-beetle-wswan libretro-bsnes-mercury-accuracy libretro-bsnes-mercury-balanced libretro-bsnes-mercury-performance mame mame-tools mgba-qt fceux 
+
+sudo apt install gnome-games-app gnome-video-arcade
+
+#############
+### Intel ###
+#############
+
+sudo apt install intel-microcode firmware-intel-sound
+
+###########
+### AMD ###
+###########
+
+sudo apt install amd64-microcode firmware-amd-graphics
+
+###############
+### Realtek ###
+###############
+
+sudo apt install firmware-realtek firmware-atheros
+
+##################
+### MKVToolnix ###
+##################
+
+sudo apt install mkvtoolnix mkvtoolnix-gui
+
+#########################
+### Instalar Epiphany ###
+#########################
+
+	Para eliminar Firefox ESR
+
+sudo apt install epiphany-browser epiphany-browser-data
+
+############################
+#### Eliminar Evolution ####
+############################
+
+sudo apt purge evolution
+
+#########################
+### Instalar Chromium ###
+#########################
+
+sudo apt install chromium chromium-l10n 
+
+############################
+### Instalar Mscorefonts ###
+############################
+
+sudo apt install ttf-mscorefonts-installer 
+
+############################
+### Configurar libdvdcss ###
+############################
+
+sudo dpkg-reconfigure libdvd-pkg
+
+########################
+### Instalar OpenJDK ###
+########################
+
+sudo apt install default-jdk default-jre
+
+################################
+### ADB y FastBoot de Google ###
+################################
+
+sudo apt install libncurses5 libstdc++6 zlib1g libc6-dev aapt
+
+
+Instalar Extensiones en Gnome Shell
+-----------------------------------
+
+https://extensions.gnome.org/local/
+
+	En el apartado de Installed extensions  ---> Activar
+
+1. Alternate tab
+2. User Themes
+
+Instalar
+
+Bing Wallpapers
+---------------
+https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/
+
+Desktop Icons: Neo
+-------------
+https://extensions.gnome.org/extension/4337/desktop-icons-neo/
+
+Dash to Dock
+------------
+https://extensions.gnome.org/extension/307/dash-to-dock/
+
+Tray Icons: Reloaded
+--------------
+https://extensions.gnome.org/extension/2890/tray-icons-reloaded/
+
+Dash to Panel -- Tipo Windows 7-10 Panel
+----------------------------------------
+https://extensions.gnome.org/extension/1160/dash-to-panel/
